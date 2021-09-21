@@ -4,13 +4,15 @@
   padding: 5px;
   border: 1px solid red;
   border-radius: 5px;
-  max-width: 80%;
+  max-width: 70%;
   &.odd {
     background-color: #fff;
     align-self: flex-end;
+    text-align: right;
   }
   &.even {
     background-color: beige;
     align-items: flex-start;
+    text-align: left;
   }
 }

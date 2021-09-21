@@ -1,25 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import "./App.scss";
+import Message from "./Components/Message";
+const App = () => {
+  const array_values = [
+    "Hello",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia",
+    "Hi , How R U?",
+    "Mmm",
+    "Hmm",
+    "Eating",
+    "Mmm",
+    "Watching",
+    "Mmm",
+    "Sleeping",
+    "Mmm",
+    "Mmm",
+    "Mmm",
+    "Mmm",
+    "Mmm",
+    "Mmm",
+    "Mmm",
+    "Mmm",
+    "Mmm",
+    "Mmm",
+    "Mmm",
+    "Mmm",
+    "Mmm",
+    "Mmm",
+    "Mmm",
+    "Mmm",
+    "Mmm",
+    "Mmm",
+    "Mmm",
+    "Mmm",
+    "Mmm",
+    "Mmm",
+    "Mmm",
+  ];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      {array_values.map((message, index) => (
+        <Message index={index} message={message} />
+      ))}
     </div>
   );
-}
+};
 
 export default App;

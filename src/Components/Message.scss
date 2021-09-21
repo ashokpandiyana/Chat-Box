@@ -1,18 +1,16 @@
 .message {
   margin: 10px;
   display: inline-block;
-  padding: 10px 5px;
+  padding: 5px;
   border: 1px solid red;
   border-radius: 5px;
   max-width: 80%;
   &.odd {
     background-color: #fff;
-    float: right;
-    clear: both;
+    align-self: flex-end;
   }
   &.even {
     background-color: beige;
-    float: left;
-    clear: both;
+    align-items: flex-start;
   }
 }
